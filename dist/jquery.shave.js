@@ -17,14 +17,14 @@
     if (!els) return;
     var character = opts.character || '&mldr;';
     var classname = opts.classname || 'js-shave';
-    var spaces = typeof opts.spaces === 'boolean' ? opts.spaces : true;
-    var charclassname = opts.charclassname || 'js-shave-char';
-    var charHtml = "<span class=\"".concat(charclassname, "\">").concat(character, "</span>");
-    var targetLinkText = opts.targetLink.text || undefined;
-    var targetLinkUrl = opts.targetLink.url || '#';
-    var targetLinkTabindex = opts.targetLink.tabindex || 0;
-    var targetLinkNewTab = opts.targetLink.newTab ? '_blank' : '_self';
-    var targetLinkHtml = "\n    <a\n      class=\"js-shave-link\"\n      href=\"".concat(targetLinkUrl, "\"\n      target=\"").concat(targetLinkNewTab, "\"\n      aria-lable=\"").concat(targetLinkText, "\"\n      title=\"").concat(targetLinkText, "\"\n      tabindex=\"").concat(targetLinkTabindex, "\"\n    >").concat(targetLinkText, "</a>");
+    let spaces = typeof opts.spaces === 'boolean' ? opts.spaces : true;
+    let charclassname = opts.charclassname || 'js-shave-char';
+    let charHtml = "<span class=\"".concat(charclassname, "\">").concat(character, "</span>");
+    let targetLinkText = opts.targetLink.text || undefined;
+    let targetLinkUrl = opts.targetLink.url || '#';
+    let targetLinkTabindex = opts.targetLink.tabindex || 0;
+    let targetLinkNewTab = opts.targetLink.newTab ? '_blank' : '_self';
+    let targetLinkHtml = "\n    <a\n      class=\"js-shave-link\"\n      href=\"".concat(targetLinkUrl, "\"\n      target=\"").concat(targetLinkNewTab, "\"\n      aria-lable=\"").concat(targetLinkText, "\"\n      title=\"").concat(targetLinkText, "\"\n      tabindex=\"").concat(targetLinkTabindex, "\"\n    >").concat(targetLinkText, "</a>");
     if (!('length' in els)) els = [els];
 
     for (var i = 0; i < els.length; i += 1) {
